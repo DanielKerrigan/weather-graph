@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title weather-graph
+        link(href='style.css', rel='stylesheet')
+        script(type='text/javascript', src='script.js').
+    body
+        div.container
+            div.form
+                h1 5 Day Forecast
+                form(action="/form_submit", method="post")
+                    label Zip Code:
+                    input(type="text", name="zip", size="6")
+                    input(type="submit")
+                    
