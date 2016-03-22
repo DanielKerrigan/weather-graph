@@ -6,7 +6,7 @@ function draw_graph(forecast){
         var date = forecast[i].date;
         var high = parseInt(forecast[i].high);
 
-        if(date[0] !== "1"){
+        if(date[1] === " "){
             date = "0"+date;
         }
 
